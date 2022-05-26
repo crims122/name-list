@@ -1,0 +1,17 @@
+﻿<Window x:Class="ButtonDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ButtonDemo"
+        mc:Ignorable="d"
+        Title="Name List" Height="400" Width="450" ResizeMode="NoResize" Background="DarkGray" Icon="https://i.ytimg.com/vi/cUqiERdIt8I/mqdefault.jpg">
+    <StackPanel Orientation="Vertical">
+
+        <Label FontWeight="Bold">Add Name</Label>
+        <TextBox x:Name="myTextBox" Width="125" HorizontalAlignment="Left" BorderThickness="1.5" BorderBrush="Black" Background="Gray"></TextBox>
+        <Button x:Name="myButton" Width="75" HorizontalAlignment="Left" FontWeight="Bold" BorderThickness="1" Click="myButton_Click">Submit</Button>
+        <Label Width="95" FontWeight="Bold">List Of Names</Label>
+        <ListBox x:Name="myListBox" Height="200" Width="100" BorderThickness="1.5" BorderBrush="Black" Background="Gray" Foreground="Black"></ListBox>
+    </StackPanel>
+</Window>
